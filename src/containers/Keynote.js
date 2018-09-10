@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import Title from './components/Title';
-import Subtitle from './components/Subtitle';
-import Author from './components/Author';
-import Topics from './components/Topics';
-import CenteredContainer from './components/CenteredContainer';
-import SlideContainer from './components/SlideContainer';
-import Contacts from './components/Contacts';
+import Title from '../components/Title';
+import Subtitle from '../components/Subtitle';
+import Author from '../components/Author';
+import Topics from '../components/Topics';
+import CenteredContainer from '../components/CenteredContainer';
+import SlideContainer from '../components/SlideContainer';
+import Contacts from '../components/Contacts';
 
 const SLIDE_THANKS = -1;
 const SLIDE_WELCOME = null;
 const SLIDE_ABOUT = -2;
 const SLIDE_CONTACTS = -3;
 
-class App extends Component {
+class Keynote extends Component {
   constructor(props) {
     const keynote = {
       title: 'Inteligência Emocional',
@@ -190,4 +190,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Keynote;
