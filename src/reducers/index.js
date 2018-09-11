@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import ReducerKeynote from './reducer_keynote';
 
 const rootReducer = combineReducers({
-    state: () => ({})
+    list: ReducerKeynote
 });
 
 export default rootReducer;

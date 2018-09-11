@@ -19,7 +19,7 @@ class Keynote extends Component {
       subtitle: 'Não leve uma rasteira das suas emoções',
       author: 'Edgar Muniz Berlinck',
       thanksMessage: 'Obrigado',
-      about: ['Fullstack Dev.', 'Mais de 10 anos de TI', 'Atualmente servidor Público - MPES'],
+      about: ['Fullstack Dev.', 'UX Designer', 'Mentor no Training Center'],
       contacts: {
         twitter: '@edgarberlinck',
         github: '@edgarberlinck',
