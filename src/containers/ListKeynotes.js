@@ -6,9 +6,8 @@ class ListKeynotes extends Component {
         this.props.fetch();
     }
     render() { 
-        console.log(this.props.list);
         return ( <div>
-            List
+            { this.props.list.map(keynote => <Item key={keynote._id} item={keynote} onEdit={ (_id) => alert(_id ) } onPlay={ (_id) => alert(_id ) } />) }
         </div> );
     }
 }
@@ -22,3 +21,16 @@ function mapStateToProps (state) {
 export default connect(mapStateToProps, {
     fetch: fetchKeynotes
 })(ListKeynotes);
+
+const Item = ({ item, onPlay, onEdit }) => (
+    <div>
+        <div>
+            {item.title}
+        </div>
+        <small>{item.subtitle}</small>
+        <div>
+            <button onClick={() => onEdit(item._id)}>Edit</button>
+            <button onClick={() => onPlay(item._id)}>Play</button>
+        </div>
+    </div>
+)
